@@ -10,7 +10,7 @@ namespace BackgroundServiceExample.Data
 
         }
 
-        public DbSet<BackgroundProccess> BackgroundProccesses { get; set; }
+        public DbSet<BackgroundProcess> BackgroundProcesses { get; set; }
         public DbSet<User> Users { get; set; }
     }
 }

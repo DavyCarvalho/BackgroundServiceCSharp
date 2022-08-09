@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace BackgroundServiceExample.Models {
-    public class BackgroundProccess {
+    public class BackgroundProcess {
         [Key]
         [Required]
         public Guid Id { get; set; }

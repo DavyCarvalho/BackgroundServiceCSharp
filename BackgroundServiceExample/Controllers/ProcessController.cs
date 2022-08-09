@@ -17,13 +17,11 @@ namespace BackgroundServiceExample.Controllers
         [HttpGet("{filterLetter}")]
         public ActionResult RequestUsersThatNameStartsWithParameter([FromRoute] string filterLetter)
         {
-            var backgroundProccess = new BackgroundProccess() 
+            var backgroundProccess = new BackgroundProcess() 
             {
                 Id = Guid.NewGuid(),
                 NameSearchParameter = filterLetter
             };
-
-            _backgroundProccessRepository.RegisterBackgroundProcess(backgroundProccess);
 
             return Ok("Searching for users ");
         }

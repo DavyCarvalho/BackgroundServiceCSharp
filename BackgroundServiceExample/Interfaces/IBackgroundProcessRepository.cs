@@ -1,8 +1,8 @@
 using BackgroundServiceExample.Models;
 
-namespace BackgroundServiceExample.Data.Interfaces
+namespace BackgroundServiceExample.Interfaces
 {
-    public interface IBackgroundProccessRepository
+    public interface IBackgroundProcessRepository
     {
         Task<BackgroundProcess> GetTrackedById(Guid id);
 
